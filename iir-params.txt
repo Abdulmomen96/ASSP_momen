@@ -1,0 +1,9 @@
+fdatool parameters of the IIR
+Bandstop
+Butterworth
+Order: 2
+Fs: 48000
+Fc1: 950
+Fc2: 1050
+
+Resulting gain 0.9935
