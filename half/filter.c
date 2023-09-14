@@ -4,12 +4,31 @@
 #define B1 49134
 #define B2 15360
 #define A0 15360
-#define A1 49134
+#define A1 49121
 #define A2 15333
 
 HALF filter(HALF x0, HALF x1, HALF x2, HALF y1, HALF y2) {
 	return addh(addh(mulh(B0,x0), mulh(B1,x1)),subh(subh(mulh(B2,x2), mulh(A1,y1)), mulh(A2,y2)));
 }
+
+/*
+#define B0 15360
+#define B1 49134
+#define B2 15360
+#define A0 15360
+#define A1 49134
+#define A2 15333
+
+
+#define B0 1.0
+#define B1 -1.9829321938553581
+#define B2 1.0
+#define A0 1.0
+#define A1 -1.970038140264835
+#define A2 0.98699496268154929
+
+
+*/
 
 int main (int argc, char *argv[])  {
 	int i;
